@@ -43,6 +43,6 @@ jobs:
         with:
           context: .
           platforms: linux/amd64,linux/aarch64
-          push: ${{ github.event_name ='pull_request'}}
+          push: ${{ github.event_name != 'pull_request'}}
           tags: ${{ steps.tags-id.outputs.tags }}
           labels: ${{ steps.tags-id.outputs.labels }}
