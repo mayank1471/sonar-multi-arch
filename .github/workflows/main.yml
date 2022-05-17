@@ -28,7 +28,7 @@ jobs:
         uses: docker/metadata-action@v3
         with:
           images: |
-            ghcr.io/mayank1471/sonar-multi-arch
+            mayank1470/sonar-multi-arch
           tags: |
             type=schedule
             type=ref,event=branch
