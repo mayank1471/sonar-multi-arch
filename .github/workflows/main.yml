@@ -29,7 +29,7 @@ jobs:
         uses: docker/metadata-action@v3
         with:
           images: |
-            sonar-multi-arch
+            ghcr.io/sonar-multi-arch
           tags: |
             type=schedule
             type=ref,event=branch
