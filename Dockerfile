@@ -59,7 +59,7 @@ CMD ["jshell"]
 
 ARG SONARQUBE_VERSION=9.4.0.54424
 ARG SONARQUBE_ZIP_URL=https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-${SONARQUBE_VERSION}.zip
-ENV SONARQUBE_HOME=/opt/sonarqube \
+ENV SONARQUBE_HOME="/opt/sonarqube" \
     SONAR_VERSION="${SONARQUBE_VERSION}" \
     SQ_DATA_DIR="/opt/sonarqube/data" \
     SQ_EXTENSIONS_DIR="/opt/sonarqube/extensions" \
